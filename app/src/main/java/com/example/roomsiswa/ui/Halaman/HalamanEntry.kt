@@ -20,6 +20,7 @@ import com.example.roomsiswa.navigasi.DestinasiNavigasi
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.roomsiswa.model.DetailSiswa
 import com.example.roomsiswa.model.PenyediaViewModel
+import com.example.roomsiswa.model.UIStateSiswa
 
 
 object DestinasiEntry: DestinasiNavigasi {
@@ -34,6 +35,15 @@ fun EntrySiswaScreen(
     modifier: Modifier = Modifier,
     viewModel: EntryViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ){
+
+}
+
+@Composable
+fun EntrySiswaBody(
+    uiStateSiswa: UIStateSiswa,
+    onSiswaValueChange: (DetailSiswa) -> Unit,
+    onSaveClick: () -> Unit,
+    modifier: Modifier = Modifier) {
 
 }
 
