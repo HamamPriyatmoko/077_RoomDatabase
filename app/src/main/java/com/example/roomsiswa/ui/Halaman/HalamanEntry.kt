@@ -7,7 +7,9 @@ import com.example.roomsiswa.R
 import com.example.roomsiswa.model.EntryViewModel
 import com.example.roomsiswa.navigasi.DestinasiNavigasi
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.roomsiswa.model.DetailSiswa
 import com.example.roomsiswa.model.PenyediaViewModel
+
 
 object DestinasiEntry: DestinasiNavigasi {
     override val route = "item_entry"
@@ -20,4 +22,16 @@ fun EntrySiswaScreen(
     navigateBack: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: EntryViewModel = viewModel(factory = PenyediaViewModel.Factory)
+){
+
+}
+
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun FormInputSIswa(
+    detailSiswa: DetailSiswa,
+    modifier: Modifier = Modifier,
+    onValueChange: (DetailSiswa) -> Unit = {},
+    enabled: Boolean = true
 ){}
